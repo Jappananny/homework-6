@@ -47,9 +47,12 @@ public class Main {
             i5++;
             int percent = (many / 100) * 7;
             many = many + percent;
-            System.out.println("За "+i5+" месяц, Вася накопил "+many+" рублей");
-
+            if (i5 % 6 == 0) {
+                System.out.println("За " + i5 + " месяц, Вася накопил " + many + " рублей");
+            }
         }
+
+
 
 
     }
