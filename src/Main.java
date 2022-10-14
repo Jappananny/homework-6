@@ -43,7 +43,7 @@ public class Main {
         System.out.println("Задача 4");
         int many = 15000;
         int i5 = 0;
-        while (many <= 12_000_000) {
+        while (i5 <= 12*9) {
             i5++;
             int percent = (many / 100) * 7;
             many = many + percent;
@@ -51,6 +51,7 @@ public class Main {
                 System.out.println("За " + i5 + " месяц, Вася накопил " + many + " рублей");
             }
         }
+
 
 
 
