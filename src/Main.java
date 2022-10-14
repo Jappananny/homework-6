@@ -51,8 +51,15 @@ public class Main {
                 System.out.println("За " + i5 + " месяц, Вася накопил " + many + " рублей");
             }
         }
-
-
+        //Задача 7
+        System.out.println("Задача 7");
+        int mount = 1;
+        while (mount < 31) {
+            mount++;
+            if (mount % 7 == 5) {
+                System.out.println("Сегодня пятница, " + mount + "-е число. Необходимо подготовить отчет.");
+            }
+        }
 
 
 
