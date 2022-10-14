@@ -39,7 +39,17 @@ public class Main {
 
             System.out.println("Год " + i + " , численность населения составляет " + total2);
         }
+        //Задача 4
+        System.out.println("Задача 4");
+        int many = 15000;
+        int i5 = 0;
+        while (many <= 12_000_000) {
+            i5++;
+            int percent = (many / 100) * 7;
+            many = many + percent;
+            System.out.println("За "+i5+" месяц, Вася накопил "+many+" рублей");
 
+        }
 
 
     }
