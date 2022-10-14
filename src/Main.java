@@ -1,3 +1,5 @@
+import java.util.zip.CheckedOutputStream;
+
 public class Main {
     public static void main(String[] args) {
         //Задача 1
@@ -23,7 +25,20 @@ public class Main {
         for (i = 10; i > 0; i--) {
             System.out.print(i+" ");
         }
+        System.out.println();
+        //Задача 3
+        System.out.println("Задача 3");
+        int countryY = 12_000_000;
+        int total2 = countryY;
+        while ( i < 10) {
+            i++;
+            int born = (countryY / 1000 * 17);
+            int deat = (countryY / 1000 * 8);
+            int people = (born - deat);
+            total2 = people+total2;
 
+            System.out.println("Год " + i + " , численность населения составляет " + total2);
+        }
 
 
 
