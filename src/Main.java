@@ -71,8 +71,15 @@ public class Main {
             if ((i3>yearPast) && (i3 % 79 == 0))
             System.out.println(i3);
         }
-
-
+        //Задача 9
+        System.out.println("Задача 9");
+        int a = 2;
+        int b;
+        int result;
+        for (b=1;b<=10;b++) {
+            result = a * b;
+            System.out.println(a + "*"+b+"="+result);
+        }
 
 
 
