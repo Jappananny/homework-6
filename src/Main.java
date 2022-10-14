@@ -60,6 +60,19 @@ public class Main {
                 System.out.println("Сегодня пятница, " + mount + "-е число. Необходимо подготовить отчет.");
             }
         }
+        //Задача 8
+        System.out.println("Задача 8");
+        int yearCurent = 2022;
+        int yearPast = yearCurent-200;
+        int yearFuture = yearCurent + 100;
+        int i3 = 0;
+        while (i3<yearFuture){
+            i3++;
+            if ((i3>yearPast) && (i3 % 79 == 0))
+            System.out.println(i3);
+        }
+
+
 
 
 
