@@ -9,8 +9,7 @@ public class Main {
         int i = 0;
         while (total < 2_459_000) {
             i++;
-            total = total + total / 100;
-            total = total + moneyForEat;
+            total = total + (total / 100)+moneyForEat;
             System.out.println("Месяц " + i + " , сумма накоплений равна " + total + " рублей");
         }
         System.out.println("Итого " + total);
@@ -32,11 +31,7 @@ public class Main {
         int total2 = countryY;
         while ( i < 10) {
             i++;
-            int born = (countryY / 1000 * 17);
-            int deat = (countryY / 1000 * 8);
-            int people = (born - deat);
-            total2 = people+total2;
-
+            total2 = (countryY / 1000 * 17)-(countryY / 1000 * 8)+total2;
             System.out.println("Год " + i + " , численность населения составляет " + total2);
         }
         //Задача 4
@@ -45,8 +40,7 @@ public class Main {
         int i5 = 0;
         while (i5 <= 12*9) {
             i5++;
-            int percent = (many / 100) * 7;
-            many = many + percent;
+            many = many + (many / 100) * 7;
             if (i5 % 6 == 0) {
                 System.out.println("За " + i5 + " месяц, Вася накопил " + many + " рублей");
             }
